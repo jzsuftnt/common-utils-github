@@ -37,7 +37,7 @@ public class Utils {
     }
 
     public static String generatePRNG() {
-        Random random = new Random(System.currentTimeMillis());
+        Random random = new Random();
         int accountID = random.nextInt();
         return String.valueOf(accountID);
     }
