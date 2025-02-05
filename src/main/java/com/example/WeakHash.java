@@ -6,6 +6,7 @@ import java.security.NoSuchAlgorithmException;
 public class WeakHash {
     public static String hashMD5(String data) throws NoSuchAlgorithmException {
         MessageDigest md = MessageDigest.getInstance("MD5");
+        System.out.println("WeakHash.java: hashMD5() called");
         byte[] hashBytes = md.digest(data.getBytes());
         StringBuilder sb = new StringBuilder();
         for (byte b : hashBytes) {
