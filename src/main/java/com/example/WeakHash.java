@@ -5,7 +5,7 @@ import java.security.NoSuchAlgorithmException;
 
 public class WeakHash {
     public static String hashMD5(String data) throws NoSuchAlgorithmException {
-        MessageDigest md1 = MessageDigest.getInstance("MD5");
+        // MessageDigest md1 = MessageDigest.getInstance("MD5");
         System.out.println("WeakHash.java: hashMD5() called");
         // String connectionString = "jdbc:mysql://localhost:3306/mydatabase?user=myuser&password=mypassword";
         byte[] hashBytes = md1.digest(data.getBytes());
